@@ -1,0 +1,373 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><script src="" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+<style type="text/css">
+body {
+    font-family: "Titillium Web", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+}
+h1 {
+    font-weight:300;
+    line-height: 1.15em;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+a:link,a:visited {
+    color: #1367a7;
+    text-decoration: none;
+}
+a:hover {
+    color: #208799;
+}
+h1, h2, h3 {
+    text-align: center;
+}
+h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+h2 {
+    font-weight: 400;
+    margin: 16px 0px 4px 0px;
+}
+.paper-title {
+    padding: 16px 0px 16px 0px;
+}
+section {
+    margin: 32px 0px 32px 0px;
+    text-align: justify;
+    clear: both;
+}
+.col-6 {
+     width: 16.6%;
+     float: left;
+}
+.col-5 {
+     width: 20%;
+     float: left;
+}
+.col-4 {
+     width: 25%;
+     float: left;
+}
+.col-3 {
+     width: 33%;
+     float: left;
+}
+.col-2 {
+     width: 50%;
+     float: left;
+}
+.row, .author-row, .affil-row {
+     overflow: auto;
+}
+.author-row, .affil-row {
+    font-size: 20px;
+}
+.row {
+    margin: 16px 0px 16px 0px;
+}
+.authors {
+    font-size: 18px;
+}
+.affil-row {
+    margin-top: 16px;
+}
+.teaser {
+    max-width: 100%;
+}
+.text-center {
+    text-align: center;  
+}
+.screenshot {
+    width: 256px;
+    border: 1px solid #ddd;
+}
+.screenshot-el {
+    margin-bottom: 16px;
+}
+hr {
+    height: 1px;
+    border: 0; 
+    border-top: 1px solid #ddd;
+    margin: 0;
+}
+.material-icons {
+    vertical-align: -6px;
+}
+p {
+    line-height: 1.25em;
+}
+.caption {
+    font-size: 16px;
+    /*font-style: italic;*/
+    color: #666;
+    text-align: left;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+video {
+    display: block;
+    margin: auto;
+}
+figure {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#bibtex pre {
+    font-size: 14px;
+    background-color: #eee;
+    padding: 16px;
+}
+.blue {
+    color: #2c82c9;
+    font-weight: bold;
+}
+.orange {
+    color: #d35400;
+    font-weight: bold;
+}
+.flex-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.paper-btn {
+  position: relative;
+  text-align: center;
+
+  display: inline-block;
+  margin: 8px;
+  padding: 8px 8px;
+
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  
+  background-color: #1367a7;
+  color: #ecf0f1 !important;
+  font-size: 20px;
+  width: 100px;
+  font-weight: 600;
+}
+
+.supp-btn {
+  position: relative;
+  text-align: center;
+
+  display: inline-block;
+  margin: 8px;
+  padding: 8px 8px;
+
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  
+  background-color: #1367a7;
+  color: #ecf0f1 !important;
+  font-size: 20px;
+  width: 150px;
+  font-weight: 600;
+}
+
+.paper-btn-parent {
+    display: flex;
+    justify-content: center;
+    margin: 16px 0px;
+}
+.paper-btn:hover {
+    opacity: 0.85;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.venue {
+    color: #1367a7;
+}
+
+.kitti {
+    display: flex;
+    justify-content: center;
+    margin: 16px 0px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #EEEEEE;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+
+
+</style>
+
+
+</head><body>
+
+<script type="text/javascript" src="./files/style/hidebib.js"></script>
+<link href="./files/style/css" rel="stylesheet" type="text/css">
+
+    <title>Significance of Anatomical Constraints in Virtual Try-On</title>
+    <meta property="og:description" content="">
+    <link href="./files/style/css2" rel="stylesheet">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="./files/style/js"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-6HHDEXF452');
+</script>
+
+
+
+
+ 
+<div class="container">
+    <div class="paper-title">
+      <h1>Significance of Anatomical Constraints in Virtual Try-On</h1>
+    </div>
+
+    
+    <div id="authors">
+        <div class="author-row">
+            <div class="col-3 text-center"><a href="https://dp-isi.github.io/debapriya-website/">Debapriya Roy</a><sup>1</sup></div>
+            <div class="col-3 text-center"><a href="https://san-santra.github.io/">Sanchayan Santra</a><sup>2</sup></div>
+            <div class="col-3 text-center"><a href="https://www.isical.ac.in/diganta-mukherjee">Diganta Mukherjee</a><sup>3</sup></div>
+            <div class="col-3 text-center"><a href="https://sites.google.com/view/bchanda/home">Bhabatosh Chanda</a><sup>3,4</sup></div>
+        </div>
+
+        <div class="affil-row">
+            <div class="venue text-center"><sup>1</sup>TCG CREST, Kolkata, India</div>
+        </div>
+        <div class="affil-row">
+            <div class="venue text-center"><sup>2</sup>Osaka University, Osaka, Japan</div>
+        </div>
+        <div class="affil-row">
+            <div class="venue text-center"><sup>3</sup>Indian Statistical Institute, Kolkata, India</div>
+        </div>
+        <div class="affil-row">
+            <div class="venue text-center"><sup>4</sup>Indian Institute of Information Technology Kalyani, India</div>
+        </div>
+        
+        <div class="affil-row">
+            <div class="venue text-center"><b><small>Accepted in IEEE Transactions on Emerging Topics in Computational Intelligence (TETCI), Dec, 2023</small> </b></div>
+        </div>
+
+        <div style="clear: both">
+            <div class="paper-btn-parent">
+            <a class="supp-btn" href="">
+                <span class="material-icons">  </span> 
+                 Paper
+            </a>
+            <a class="supp-btn" href="">
+                <span class="material-icons">  </span> 
+                  Code </br>
+                  (Coming Soon)
+            </a>
+        </div></div>
+    </div>
+
+    <section id="teaser">
+            <figure style="width: 100%;">
+                <a href="./files/teaser.png">
+                    <img width="100%" src="./files/teaser.png">
+                </a>
+                <p class="caption" style="margin-bottom: 1px;">
+                    This paper mainly contributes two things, (1) We propose a part-based solution approach that addresses the overlap issues by warping the independently movable parts separately. (2) We propose ATAG transform, a geometric warping approach that can tackle clothing warpings related to complex arm bendings. 
+                </p>
+            </figure>
+    </section>
+
+    <section id="abstract">
+        <h2>Abstract</h2>
+        <hr>
+        <p>
+            The system of Virtual Try-ON (VTON) allows a user to try a product virtually. In general, a VTON system takes a clothing source and a person's image to predict the try-on output of the person in the given clothing. Although existing methods perform well for simple poses, in case of bent or crossed arms posture or when there is a significant difference between the alignment of the source clothing and the pose of the target person, these methods fail by generating inaccurate clothing deformations. In the VTON methods that employ Thin Plate Spline (TPS) based clothing transformations, this mainly occurs for two reasons - (1)~the second-order smoothness constraint of TPS that restricts the bending of the object plane. (2)~Overlaps among different clothing parts (e.g., sleeves and torso) can not be modeled by a single TPS transformation, as it assumes the clothing as a single planar object; therefore, disregards the independence of movement of different clothing parts. To this end, we make two major contributions. Concerning the bending limitations of TPS, we propose a human AnaTomy-Aware Geometric (ATAG) transformation.  Regarding the overlap issue, we propose a part-based warping approach that divides the clothing into independently warpable parts to warp them separately and later combine them. Extensive analysis shows the efficacy of this approach.
+        </p>
+    </section>
+
+    
+
+        <h2>Results</h2>
+        <hr>
+        
+        <h2>VITON-HD dataset</h2>
+        <hr>
+        <h3>Comparative Study</h3>
+        <section id="teaser">
+            <figure style="width: 100%;">
+                <a href="">
+                    <img width="100%" src="./files/res_hd1-1.png">
+                </a>
+            </figure>
+        </section>
+
+        
+        
+        
+        <h2>MPV dataset</h2>
+        <hr>
+        <h3>Comparative Study</h3>
+        <section id="teaser">
+            <figure style="width: 100%;">
+                <a href="">
+                    <img width="100%" src="./files/res_mpv-1.png">
+                </a>
+            </figure>
+        </section>
+
+        <h3>More results of ours</h3>
+        <section id="teaser">
+            <figure style="width: 100%;">
+                <a href="">
+                    <img width="100%" src="./files/res_mpv-2.png">
+                </a>
+            </figure>
+        </section>
+
+    
+    
+    <section id="bibtex">
+        <h2>Citation</h2>
+        <pre><code>
+Will be updated soon
+        </code></pre>
+    </section>
+
+    
+
+<br>
+<small><small><small>Courtesy : https://sds-complete.github.io/</small></small></small>
+
+</div>
+
+
+</body></html>
